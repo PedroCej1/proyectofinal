@@ -1,0 +1,32 @@
+:root {
+  --bgcolor: white;
+  --textcolor: black;
+  --primary: #0563c0;
+  --secondary: #30c8fb;
+  --resaltado: #fafe1e;
+}
+
+
+/* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bgcolor)
+}
+
+/* tipografía global */
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* layout base */
+.page-container {
+  padding: 20px;
+}
+
+/* títulos */
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}

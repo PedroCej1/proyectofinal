@@ -1,0 +1,126 @@
+:root {
+  /* ===== COLORES BASE (LIGHT) ===== */
+  --primary: #1265ff;
+  --secondary: #0a275c;
+
+  --accent: #3d83ff;
+  --accent-2: #7ab8ff;
+
+  --light: #e8f2ff;
+  --dark: #1a1a1a;
+
+  /* ===== UI TOKENS ===== */
+  --bg: var(--light);
+  --text: #0f172a;
+
+  --surface: #ffffff;
+  --surface-2: #f4f8ff;
+
+  --border: rgba(10, 39, 92, 0.15);
+
+  --btn-text: #ffffff;
+
+  --shadow: 0 10px 25px rgba(18, 101, 255, 0.15);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Satoshi;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+/* LINKS */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* CONTENEDORES */
+.container {
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+/* CARDS */
+.card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+}
+
+/* LISTAS */
+.list {
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.list-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  transition: 0.2s;
+}
+
+.list-item:hover {
+  background: var(--surface-2);
+}
+
+/* BOTONES GLOBAL (override Vuetify opcional) */
+.v-btn {
+  margin-right: 4px;
+  margin-left: 4px;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-weight: 600;
+}
+
+.v-btn:hover {
+  transform: scale(1.1);
+}
+
+.mio {
+  background: linear-gradient(180deg, #3d83ff, #7ab8ff);
+  color: #0f172a;
+}
+
+/* BOTÓN PRIMARY PERSONALIZADO */
+.btn-primary {
+  background: var(--primary);
+  color: var(--btn-text);
+  box-shadow: var(--shadow);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+}
+
+/* INPUTS */
+input,
+textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('@/assets/fonts/Satoshi-Variable.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('@/assets/fonts/Satoshi-Bold.otf');
+  font-weight: 700;
+}
