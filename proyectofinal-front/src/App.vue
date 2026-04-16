@@ -29,6 +29,8 @@ const go = (path: string) => {
       </v-btn>
       <v-spacer />
       <v-spacer />
+      <v-spacer />
+      <v-spacer />
       <v-btn icon="mdi-cog" class="white" size="small" variant="elevated" @click="go('/settings')" />
     </v-toolbar>
 

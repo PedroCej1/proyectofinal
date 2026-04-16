@@ -46,6 +46,8 @@ public interface EmpleadoRepository extends JpaRepository<Empleado, Integer> {
      */
     List<Empleado> findByFechaBajaIsNull();
 
+    List<Empleado>findAll();
+
     /**
      * Comprueba si un empleado tiene proyectos asignados
      */
