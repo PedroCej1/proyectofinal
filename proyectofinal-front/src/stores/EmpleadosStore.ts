@@ -136,17 +136,18 @@ export const useEmpleadosStore = defineStore('empleados', {
           title: 'No se puede dar de baja',
           text: text,
         })
-        return
+        return false
       }
 
       await this.fetchEmpleados()
 
       Swal.fire({
         icon: 'success',
-        title: 'Comprueba que se ha dado de baja',
+        title: 'Se ha dado de baja al empleado',
         timer: 1500,
         showConfirmButton: false,
       })
+      return true
     },
 
     // =========================

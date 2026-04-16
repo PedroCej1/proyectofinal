@@ -45,26 +45,83 @@ public class DataInitializerService {
     // =========================
     private List<Empleado> generateEmpleados() {
         return List.of(
+                emp("77889900L","Marta","Dominguez","Rey","600000016","600100016","marta16@email.com",1990,1,5, 2018,2,3, null, "S","S"),
+                emp("88990011P","Victor","Leon","Cano","600000017",null,"victor17@email.com",1984,9,21, 2016,5,14, null, "C","N"),
+                emp("99001122A","Raquel","Mendez","Vega","600000018","600100018","raquel18@email.com",1993,4,11, 2020,7,7, null, "S","S"),
+                emp("10111213Q","Oscar","Nieto","Campos","600000019",null,"oscar19@email.com",1988,2,2, 2017,9,9, null, "C","S"),
+                emp("12131415W","Irene","Bravo","Fuentes","600000020","600100020","irene20@email.com",1995,6,30, 2022,8,8, null, "S","N"),
 
-                emp("12345678Z","Juan","Perez","Gomez","600000001","600100001","juan1@email.com",1990,5,12, 2020,1,10, null, "S","S"),
-                emp("23456789D","Maria","Lopez","Fernandez","600000002",null,"maria2@email.com",1988,3,22, 2019,2,15, null, "C","S"),
-                emp("34567890V","Carlos","Sanchez","Ruiz","600000003","600100003","carlos3@email.com",1992,7,1, 2021,3,20, null, "S","N"),
-                emp("45678901G","Ana","Martinez","Diaz","600000004",null,"ana4@email.com",1995,11,30, 2022,4,25, null, "S","S"),
-                emp("56789012B","Luis","Garcia","Moreno","600000005","600100005","luis5@email.com",1985,9,10, 2018,6,10, null, "C","N"),
+                emp("13141516X","Adrian","Rojas","Peña","600000021",null,"adrian21@email.com",1992,11,9, 2019,1,1, null, "S","S"),
+                emp("14151617Y","Noelia","Pardo","Rubio","600000022","600100022","noelia22@email.com",1996,5,18, 2023,2,2, null, "S","S"),
+                emp("15161718Z","Hector","Blanco","Lara","600000023",null,"hector23@email.com",1987,7,25, 2015,6,6, null, "C","N"),
+                emp("16171819A","Silvia","Cortes","Soto","600000024","600100024","silvia24@email.com",1994,3,12, 2021,10,10, null, "S","S"),
+                emp("17181920B","Ivan","Sanz","Pastor","600000025",null,"ivan25@email.com",1989,8,8, 2018,12,12, null, "C","S"),
 
-                emp("67890123N","Elena","Torres","Navarro","600000006","600100006","elena6@email.com",1993,2,14, 2020,7,11, null, "S","S"),
-                emp("78901234H","Pedro","Ramirez","Santos","600000007",null,"pedro7@email.com",1987,8,19, 2017,8,1, null, "C","S"),
-                emp("89012345J","Lucia","Gil","Ortega","600000008","600100008","lucia8@email.com",1996,12,5, 2023,1,1, null, "S","N"),
-                emp("90123456S","Jorge","Vazquez","Castro","600000009",null,"jorge9@email.com",1989,4,18, 2016,3,12, null, "C","S"),
-                emp("11223344B","Paula","Ramos","Iglesias","600000010","600100010","paula10@email.com",1991,6,23, 2019,9,9, null, "S","S"),
+                emp("18192021C","Patricia","Benitez","Vidal","600000026","600100026","patricia26@email.com",1991,1,19, 2020,4,4, null, "S","N"),
+                emp("19202122D","Fernando","Rico","Pozo","600000027",null,"fernando27@email.com",1983,10,14, 2014,3,3, null, "C","S"),
+                emp("20212223E","Natalia","Guerrero","Acosta","600000028","600100028","natalia28@email.com",1997,12,1, 2022,5,5, null, "S","S"),
+                emp("21222324F","Sergio","Cabrera","Rios","600000029",null,"sergio29@email.com",1990,6,6, 2019,7,7, null, "S","S"),
+                emp("22232425G","Beatriz","Lorenzo","Navas","600000030","600100030","beatriz30@email.com",1986,9,27, 2016,8,8, null, "C","N"),
 
-                // 👇 algunos dados de baja (IMPORTANTE)
-                emp("22334455C","Diego","Herrera","Molina","600000011",null,"diego11@email.com",1986,1,15, 2015,2,2, 2023, "C","N"),
-                emp("33445566K","Sara","Suarez","Delgado","600000012","600100012","sara12@email.com",1994,10,10, 2021,11,11, null, "S","S"),
-                emp("44556677E","Alberto","Cruz","Marin","600000013",null,"alberto13@email.com",1983,7,7, 2014,5,5, null, "C","S"),
-                emp("55667788T","Carmen","Ortiz","Prieto","600000014","600100014","carmen14@email.com",1997,3,3, 2022,6,6, null, "S","N"),
-                emp("66778899R","Ruben","Serrano","Calvo","600000015",null,"ruben15@email.com",1982,12,12, 2013,4,4, 2024, "C","S")
+                emp("23242526H","Guillermo","Mora","Salas","600000031",null,"guillermo31@email.com",1982,4,4, 2013,2,2, 2022, "C","S"),
+                emp("24252627J","Claudia","Estevez","Roldan","600000032","600100032","claudia32@email.com",1993,7,17, 2020,6,6, null, "S","S"),
+                emp("25262728K","Alvaro","Soler","Duran","600000033",null,"alvaro33@email.com",1988,5,5, 2017,11,11, null, "C","N"),
+                emp("26272829L","Monica","Tomas","Rivas","600000034","600100034","monica34@email.com",1995,2,20, 2022,9,9, null, "S","S"),
+                emp("27282930M","Pablo","Ballesteros","Sierra","600000035",null,"pablo35@email.com",1991,11,11, 2018,3,3, null, "S","S"),
 
+                emp("28293031N","Cristina","Carrasco","Roman","600000036","600100036","cristina36@email.com",1996,1,1, 2023,1,10, null, "S","N"),
+                emp("29303132P","Daniel","Parra","Crespo","600000037",null,"daniel37@email.com",1987,8,13, 2015,4,4, null, "C","S"),
+                emp("30313233Q","Eva","Aguilar","Beltran","600000038","600100038","eva38@email.com",1994,6,15, 2021,5,5, null, "S","S"),
+                emp("31323334R","Mario","Villar","Lago","600000039",null,"mario39@email.com",1985,3,9, 2014,7,7, null, "C","N"),
+                emp("32333435S","Lorena","Moya","Cuesta","600000040","600100040","lorena40@email.com",1992,12,28, 2019,8,8, null, "S","S"),
+
+                emp("33343536T","Andres","Valle","Correa","600000041",null,"andres41@email.com",1989,10,10, 2016,9,9, null, "C","S"),
+                emp("34353637U","Julia","Segura","Bravo","600000042","600100042","julia42@email.com",1997,4,6, 2022,10,10, null, "S","S"),
+                emp("35363738V","Ricardo","Padilla","Ponce","600000043",null,"ricardo43@email.com",1984,2,14, 2013,1,1, 2024, "C","N"),
+                emp("36373839W","Sonia","Gallego","Barrios","600000044","600100044","sonia44@email.com",1993,7,7, 2020,2,2, null, "S","S"),
+                emp("37383940X","Javier","Ordoñez","Tejada","600000045",null,"javier45@email.com",1988,9,3, 2017,6,6, null, "C","S"),
+
+                emp("38394041Y","Rocio","Velasco","Matos","600000046","600100046","rocio46@email.com",1995,5,25, 2022,7,7, null, "S","N"),
+                emp("39404142Z","Tomas","Santana","Quesada","600000047",null,"tomas47@email.com",1986,11,11, 2015,3,3, null, "C","S"),
+                emp("40414243A","Veronica","Ibañez","Maldonado","600000048","600100048","veronica48@email.com",1991,8,18, 2019,4,4, null, "S","S"),
+                emp("41424344B","Emilio","Redondo","Arce","600000049",null,"emilio49@email.com",1983,6,6, 2012,5,5, 2021, "C","N"),
+                emp("42434445C","Nuria","Escobar","Ferrer","600000050","600100050","nuria50@email.com",1996,3,3, 2023,6,6, null, "S","S"),
+
+                emp("43444546D","Roberto","Pascual","Montes","600000051",null,"roberto51@email.com",1987,2,8, 2016,4,4, null, "C","S"),
+                emp("44454647E","Alicia","Caballero","Pineda","600000052","600100052","alicia52@email.com",1994,9,17, 2021,5,5, null, "S","S"),
+                emp("45464748F","Miguel","Nieto","Saez","600000053",null,"miguel53@email.com",1985,6,1, 2015,7,7, null, "C","N"),
+                emp("46474849G","Laura","Vega","Campos","600000054","600100054","laura54@email.com",1993,12,12, 2020,8,8, null, "S","S"),
+                emp("47484950H","Raul","Hidalgo","Carmona","600000055",null,"raul55@email.com",1989,4,19, 2018,9,9, null, "S","S"),
+
+                emp("48495051J","Cristina","Vera","Luque","600000056","600100056","cristina56@email.com",1996,1,14, 2022,10,10, null, "S","N"),
+                emp("49505152K","Antonio","Reyes","Cortes","600000057",null,"antonio57@email.com",1982,10,30, 2013,11,11, null, "C","S"),
+                emp("50515253L","Miriam","Castillo","Paz","600000058","600100058","miriam58@email.com",1995,7,7, 2022,12,12, null, "S","S"),
+                emp("51525354M","Julio","Morales","Garrido","600000059",null,"julio59@email.com",1986,5,21, 2016,1,1, null, "C","N"),
+                emp("52535455N","Teresa","Prieto","Oliva","600000060","600100060","teresa60@email.com",1992,3,3, 2019,2,2, null, "S","S"),
+
+                emp("53545556P","Marcos","Saavedra","Arroyo","600000061",null,"marcos61@email.com",1990,11,11, 2018,3,3, null, "S","S"),
+                emp("54555657Q","Eva","Roldan","Cuellar","600000062","600100062","eva62@email.com",1997,6,18, 2023,4,4, null, "S","N"),
+                emp("55565758R","Diego","Benito","Polo","600000063",null,"diego63@email.com",1984,9,9, 2014,5,5, null, "C","S"),
+                emp("56575859S","Andrea","Soto","Cardenas","600000064","600100064","andrea64@email.com",1993,8,24, 2020,6,6, null, "S","S"),
+                emp("57585960T","Joaquin","Roman","Nieto","600000065",null,"joaquin65@email.com",1988,12,5, 2017,7,7, null, "C","S"),
+
+                emp("58596061U","Natalia","Cuevas","Benavente","600000066","600100066","natalia66@email.com",1991,1,1, 2019,8,8, 2024, "S","N"),
+                emp("59606162V","Hugo","Martos","Bautista","600000067",null,"hugo67@email.com",1983,3,3, 2012,9,9, null, "C","S"),
+                emp("60616263W","Paola","Serrat","Montero","600000068","600100068","paola68@email.com",1996,4,27, 2022,10,10, null, "S","S"),
+                emp("61626364X","Rafael","Pacheco","Gomez","600000069",null,"rafael69@email.com",1987,2,2, 2016,11,11, null, "C","N"),
+                emp("62636465Y","Bea","Maldonado","Sola","600000070","600100070","bea70@email.com",1994,5,15, 2021,12,12, null, "S","S"),
+
+                emp("63646566Z","Enrique","Pons","Trujillo","600000071",null,"enrique71@email.com",1985,10,10, 2015,1,1, null, "C","S"),
+                emp("64656667A","Clara","Bermudez","Pastor","600000072","600100072","clara72@email.com",1992,9,9, 2019,2,2, null, "S","S"),
+                emp("65666768B","Alex","Santiago","Iglesias","600000073",null,"alex73@email.com",1990,7,7, 2018,3,3, null, "S","N"),
+                emp("66676869C","Rosa","Calderon","Rico","600000074","600100074","rosa74@email.com",1995,6,6, 2022,4,4, null, "S","S"),
+                emp("67686970D","Felipe","Naranjo","Vidal","600000075",null,"felipe75@email.com",1986,11,11, 2016,5,5, null, "C","S"),
+
+                emp("68697071E","Lidia","Montoya","Porras","600000076","600100076","lidia76@email.com",1993,1,23, 2020,6,6, null, "S","S"),
+                emp("69707172F","Bruno","Camacho","Del Rio","600000077",null,"bruno77@email.com",1988,4,4, 2017,7,7, null, "C","N"),
+                emp("70717273G","Sofia","Otero","Pizarro","600000078","600100078","sofia78@email.com",1997,8,8, 2023,8,8, null, "S","S"),
+                emp("71727374H","David","Navarro","Requena","600000079",null,"david79@email.com",1984,12,12, 2014,9,9, null, "C","S"),
+                emp("72737475J","Elisa","Aranda","Moya","600000080","600100080","elisa80@email.com",1991,3,3, 2019,10,10, null, "S","S")
         );
     }
 

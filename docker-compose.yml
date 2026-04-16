@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
 
   mysql:
@@ -33,3 +35,14 @@ services:
       - "5173:5173"
     depends_on:
       - backend
+
+  analytics:
+    build: ./analytics
+    container_name: analytics
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+    environment:
+      DB_HOST: mysql

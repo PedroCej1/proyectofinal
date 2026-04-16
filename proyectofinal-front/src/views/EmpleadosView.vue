@@ -51,16 +51,19 @@ const confirmarBaja = async (id: number) => {
         cancelButtonColor: '#3085d6',
     })
 
-    if (result.isConfirmed) {
-        await store.darDeBaja(id)
+    if (!result.isConfirmed) return
 
+    const ok = await store.darDeBaja(id)
+
+    if (ok) {
         Swal.fire({
             icon: 'success',
-            title: 'Empleado dado de baja',
-            timer: 1500,
+            title: 'Proyecto dado de baja',
+            timer: 1200,
             showConfirmButton: false
         })
     }
+
 }
 
 

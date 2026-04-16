@@ -110,9 +110,11 @@ const reactivar = async (id: number) => {
 
             <v-col v-for="p in paginatedProyectos" :key="p.idProyecto" cols="12" sm="6" md="4" lg="3">
 
-                <v-card :style="p.imagenUrl
-                    ? { backgroundImage: `url(${p.imagenUrl})` }
-                    : { backgroundColor: '#f1f1f1' }" class="project-card" elevation="3">
+                <v-card :style="{
+                    backgroundImage: p.imagenUrl ? `linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(${p.imagenUrl})` : '',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                }" class="project-card" elevation="3">
 
 
                     <v-card-title class="d-flex justify-space-between">
